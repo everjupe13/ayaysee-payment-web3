@@ -6,7 +6,7 @@ import { HelioPay } from '@heliofi/react'
 import { ClusterType } from '@heliofi/sdk'
 import { Cluster } from '@solana/web3.js'
 import { FC, useState } from 'react'
-import { useSearchParams } from 'react-router-dom'
+// import { useSearchParams } from 'react-router-dom'
 
 export const HomePage: FC = () => {
   const defaultPaymentRequestId = '64e777c9d32101104adf1d67'
@@ -16,8 +16,8 @@ export const HomePage: FC = () => {
 
   const [_isSuccess, _setIsSuccess] = useState<boolean>(false)
 
-  const [searchParams, setSearchParams] = useSearchParams()
-  console.log(searchParams)
+  // const [searchParams, setSearchParams] = useSearchParams()
+  // console.log(searchParams)
 
   return (
     <>
